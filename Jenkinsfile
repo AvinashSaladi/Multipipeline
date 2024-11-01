@@ -1,11 +1,17 @@
-pipeline{
+pipeline {
     agent any
-    stages{
-        stage('Code'){
-            echo "code from git"
+
+    stages {
+        stage('Code') {
+            steps {
+                echo "code from git"
+            }
         }
-        stage('Build'){
-            echo "by maven tool"
+        stage('Build') {
+            steps {
+                echo "by maven tool"
+            }
         }
     }
-}
+}
+
